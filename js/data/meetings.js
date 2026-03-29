@@ -217,7 +217,58 @@ const meetingsModule = {
                         ]
                     ]
                 },
-                { day: 5, isAvailable: false },
+                {
+                    day: 5,
+                    title: "Concluding the Meeting & Summarizing",
+                    isAvailable: true,
+                    structures: [
+                        "To wrap things up, let's briefly go over what we discussed today.",
+                        "Before we finish, I'd like to summarize our main decisions.",
+                        "Are there any final thoughts before we close the meeting?"
+                    ],
+                    vocabulary: [
+                        { en: "Wrap", type: "v", ipa: "/ræp/", vi: "Gói gọn", ex: "We <strong>wrap</strong> it up." },
+                        { en: "Briefly", type: "adv", ipa: "/ˈbriːf.li/", vi: "Ngắn gọn", ex: "We <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Discuss", type: "v", ipa: "/dɪˈskʌs/", vi: "Thảo luận", ex: "We <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Finish", type: "v", ipa: "/ˈfɪn.ɪʃ/", vi: "Hoàn thành", ex: "Before we <strong>finish</strong>, we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Summarize", type: "v", ipa: "/ˈsʌm.ə.raɪz/", vi: "Tổng hợp", ex: "Before we <strong>finish</strong>, I will <strong>summarize</strong> what we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Main", type: "adj", ipa: "/meɪn/", vi: "Chính", ex: "Before we <strong>finish</strong>, I will <strong>summarize</strong> the <strong>main</strong> point we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Decision", type: "n", ipa: "/dɪˈsɪʒ.ən/", vi: "Quyết định", ex: "Before we <strong>finish</strong>, I will <strong>summarize</strong> the <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Final", type: "adj", ipa: "/ˈfaɪ.nəl/", vi: "Cuối cùng", ex: "Before we <strong>finish</strong>, I will <strong>summarize</strong> the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Close", type: "v", ipa: "/kloʊz/", vi: "Đóng", ex: "Before we <strong>close</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Meeting", type: "n", ipa: "/ˈmiː.t̬ɪŋ/", vi: "Cuộc họp", ex: "Before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong> and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Agree", type: "v", ipa: "/əˈɡriː/", vi: "Đồng ý", ex: "Before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Point", type: "n", ipa: "/pɔɪnt/", vi: "Điểm/Ý chính", ex: "Before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Question", type: "n", ipa: "/ˈkwes.tʃən/", vi: "Câu hỏi", ex: "If there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Clear", type: "adj", ipa: "/klɪr/", vi: "Rõ ràng", ex: "To be <strong>clear</strong>, if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Note", type: "n/v", ipa: "/noʊt/", vi: "Ghi chú", ex: "I will make a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Record", type: "n/v", ipa: "/ˈrek.ɚd/", vi: "Bản ghi/Ghi chép", ex: "I will <strong>record</strong> a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Share", type: "v", ipa: "/ʃer/", vi: "Chia sẻ", ex: "I will <strong>share</strong> and <strong>record</strong> a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Email", type: "n/v", ipa: "/ˈiː.meɪl/", vi: "Email", ex: "I will <strong>email</strong>, <strong>share</strong> and <strong>record</strong> a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Minute", type: "n", ipa: "/ˈmɪn.ɪt/", vi: "Biên bản", ex: "I will <strong>email</strong> the <strong>minute</strong>, <strong>share</strong> and <strong>record</strong> a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." },
+                        { en: "Productive", type: "adj", ipa: "/prəˈdʌk.tɪv/", vi: "Hiệu quả", ex: "This is <strong>productive</strong>! I will <strong>email</strong> the <strong>minute</strong>, <strong>share</strong> and <strong>record</strong> a <strong>note</strong> to be <strong>clear</strong>: if there is no <strong>question</strong>, before we <strong>close</strong> this <strong>meeting</strong> and <strong>finish</strong>, I will <strong>summarize</strong> the <strong>point</strong> of the <strong>final</strong> and <strong>main</strong> <strong>decision</strong> we <strong>discuss</strong>, <strong>agree</strong> on, and <strong>briefly</strong> <strong>wrap</strong> it up." }
+                    ],
+                    conversations: [
+                        [
+                            { speaker: "A", text: "This was a very <strong>productive</strong> <strong>meeting</strong>. To <strong>wrap</strong> things up, let's <strong>briefly</strong> go over what we <strong>discuss</strong> today." },
+                            { speaker: "B", text: "Yes, to be <strong>clear</strong>, I have a <strong>question</strong> about the <strong>main</strong> <strong>point</strong> of our <strong>final</strong> <strong>decision</strong>. Did we <strong>agree</strong> on it?" },
+                            { speaker: "C", text: "We did. Before we <strong>finish</strong> and <strong>close</strong>, I will <strong>summarize</strong> and <strong>record</strong> every <strong>note</strong>." },
+                            { speaker: "A", text: "Excellent. Please <strong>share</strong> it and <strong>email</strong> the <strong>minute</strong> to everyone." }
+                        ],
+                        [
+                            { speaker: "A", text: "Before we <strong>finish</strong>, I'd like to <strong>summarize</strong> our <strong>main</strong> <strong>decision</strong> so everything is <strong>clear</strong>." },
+                            { speaker: "B", text: "I <strong>agree</strong>. If there is no more <strong>question</strong>, I will <strong>record</strong> the <strong>final</strong> <strong>point</strong> we <strong>discuss</strong> into a <strong>note</strong>." },
+                            { speaker: "C", text: "I will use the <strong>minute</strong> to <strong>email</strong> and <strong>share</strong> them. This <strong>meeting</strong> was highly <strong>productive</strong>." },
+                            { speaker: "A", text: "Thanks for the help. Let's <strong>briefly</strong> <strong>wrap</strong> it up and <strong>close</strong> for today." }
+                        ],
+                        [
+                            { speaker: "A", text: "Are there any <strong>final</strong> thoughts before we <strong>close</strong> the <strong>meeting</strong>?" },
+                            { speaker: "B", text: "Just one <strong>question</strong>. Did we <strong>record</strong> the <strong>note</strong> and <strong>minute</strong> for the <strong>point</strong> we <strong>discuss</strong>?" },
+                            { speaker: "C", text: "Yes. It is <strong>clear</strong> that we <strong>agree</strong> on the <strong>main</strong> <strong>decision</strong>. It was a <strong>productive</strong> session." },
+                            { speaker: "A", text: "Good. I will <strong>summarize</strong> the results, <strong>briefly</strong> <strong>wrap</strong> everything up before we <strong>finish</strong>, and <strong>share</strong> it via <strong>email</strong>." }
+                        ]
+                    ]
+                },
                 { day: 6, isAvailable: false },
                 { day: 7, isAvailable: false }
             ]
